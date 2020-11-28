@@ -3,7 +3,7 @@
      <h1 class="text-center">Crud</h1>
 
      <div class="text-center">
-        <a href="{{'books/create'}}">
+        <a href="{{'/books/create'}}">
             <button class="btn btn-success">Cadastrar</button>
         </a>
      
@@ -35,7 +35,7 @@
                       <a href="{{url("books/$books->id")}}">
                             <button class="btn btn-dark">Visualizar</button>
                       </a>
-                      <a href="">
+                      <a href="{{url("books/$books->id/edit")}}">
                             <button class="btn btn-primary">Editar</button>
                       </a>
                       <a href="">

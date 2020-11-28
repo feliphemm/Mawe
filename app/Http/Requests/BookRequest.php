@@ -25,7 +25,16 @@ class BookRequest extends FormRequest
     {
         return [
             'title'=>'required',
-            'pages'=>'required|numeric'
+            'pages'=>'required|numeric',
+            'price'=>'required|numeric'
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'title.required' => 'Coloque o Título do Livro',
+            'pages.numeric' => 'as Paginas deve ser um valor numérico',
+            'price.numeric' => 'o Preço deve ser um valor numérico',
         ];
     }
 }

@@ -8,6 +8,8 @@
 </head>
 <body>
     @yield('content')
+
+    <script src=""></script>
 </body>
 </html>
 
